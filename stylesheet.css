@@ -1,0 +1,276 @@
+html {
+	background-color: #ececec;
+}
+
+body {
+	max-width: 900px;
+	margin: 02rem auto 0 auto;
+	padding: 1rem;
+	background-color: white;
+}
+
+body > h1:first-child {
+	margin-top: 0;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 700;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+img {
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+button,
+.btn {
+	font-size: 14px;
+	height: 32px;
+	outline: none;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	background-color: lightgray;
+	text-decoration: none;
+	color: white;
+}
+
+button:hover,
+.btn:hover {
+	background-color: gray;
+}
+
+.btn:visited {
+	color: black;
+}
+
+.btn-blue {
+	background-color: #2b70f2;
+	color: white;
+}
+.btn-blue:hover {
+	background-color: #1d5fdb;
+}
+
+.red-link {
+	color: red !important;
+}
+
+hr {
+	border-top: 1px dashed #7e7e7e !important;
+	border: none;
+}
+
+a {
+	color: #0000ee;
+	text-decoration: none;
+}
+
+a:hover {
+	color: lightblue;
+}
+
+a:visited {
+	color: #0000ee;
+}
+
+.center {
+	display: flex;
+	gap: 6px;
+	justify-content: center;
+	align-items: center;
+}
+
+.logout.center {
+	flex-direction: column;
+}
+
+fieldset {
+	border: 1px dashed #7e7e7e;
+	border-color: gray;
+	background-color: white;
+	margin: 0.5rem auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+fieldset > legend {
+	text-align: left;
+}
+
+fieldset > textarea {
+	width: 100%;
+	height: 100px;
+}
+
+fieldset.formular {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+fieldset.formular > label {
+	padding: 0.25rem 0;
+	text-align: right;
+}
+
+fieldset.formular > input,
+select {
+	width: 60%;
+	padding: 0.25rem 0.25rem;
+}
+
+fieldset.formular-radio {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 10px;
+}
+
+.chat {
+	border: 1px solid #b4b4b4;
+	border-radius: 4px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.chat > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.chat > div > span {
+	color: gray;
+}
+
+.send-input-one {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.send-input-one > input {
+	flex-grow: 1;
+	height: 30px;
+}
+
+.send-input-one > button {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.input-corner {
+	padding: 0 10px;
+	border-radius: 0;
+	border: 1px solid gray;
+	outline: none;
+}
+
+ul {
+	list-style-type: none;
+	background-color: white;
+	border: 1px solid #b4b4b4;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+ul li a {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+ul li a span:nth-child(2n) {
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #0000ee;
+	color: white;
+}
+
+ul li a {
+	color: black !important;
+	text-decoration: none;
+}
+
+.flex-profile {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+div.flex-profile img {
+	margin: 0;
+	border-radius: 0%;
+}
+
+div.flex-profile div {
+	flex-grow: 1;
+	border: 1px solid #b4b4b4;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+.flex-friendlist {
+	display: flex;
+	gap: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+	fieldset.formular {
+		grid-template-columns: 1fr;
+	}
+
+	fieldset.formular > label {
+		text-align: left;
+	}
+
+	.flex-profile {
+		flex-direction: column;
+	}
+
+	.flex-friendlist {
+		flex-direction: column;
+	}
+
+	.send-input-one {
+		flex-direction: column;
+	}
+}
+
+.error {
+	border: 2px solid red !important;
+	transition: border 0.3s;
+}
+
+.valid {
+	border: 2px solid green !important;
+	transition: border 0.3s;
+}
+
+.fsc {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 4px;
+}
