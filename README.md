@@ -128,8 +128,9 @@ frontend and backend technologies interact in a real-world application scenario.
 ---
 
 ## Technologies Used
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- HTML
+- CSS
+- JavaScript 
 - PHP
 - Bootstrap
+
